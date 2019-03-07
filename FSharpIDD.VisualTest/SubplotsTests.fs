@@ -165,7 +165,7 @@ let setSubplotTestAxisBinding =
         |> Subplots.setSyncHorizontalAxes true
         |> Subplots.setSyncVerticalAxes true
     "Shared axes in the Subplot",
-    ["|> Subplots.setSharedHorizontalAxis true |> Subplots.setSharedVerticalAxis true"],
+    ["|> Subplots.setSyncHorizontalAxes true |> Subplots.setSyncVerticalAxes true"],
     subplots
     
 let setSubplotTestAxisHorizontalBinding =    
@@ -174,5 +174,5 @@ let setSubplotTestAxisHorizontalBinding =
         subplots
         |> Subplots.setSyncHorizontalAxes true
     "Horizontal axes are shared in the Subplot",
-    ["|> Subplots.setSharedHorizontalAxis true"],
+    ["|> Subplots.setSyncHorizontalAxes true"],
     subplots
